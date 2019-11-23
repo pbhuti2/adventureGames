@@ -1,0 +1,41 @@
+OBJECTIVE
+The main objective is to create a MadLib Generator
+1) We will need to make a function that takes input from the user. 
+This should have parameters of what is needed(verb, noun, etc.). 
+Their input will have to be stored somewhere
+2) We will need to store a MadLib into a variable
+3) We will need to prompt the user for each noun, verb, etc.
+4) We will need to put all of the users inputs into the MadLib
+5) We will need to print the MadLib for the user to read
+
+PSEUDOCODE
+
+MAD_LIB = "Today I went to the zoo. I saw a(n){} (adjective) {} (Noun) jumping up and down in its tree. He {} (verb, past tense) {} (adverb) through the large tunnel that led to its {} (adjective) {} (noun). I got some peanuts and passed them through the cage to a gigantic gray {} (noun) towering above my head. Feeding that animal made me hungry. I went to get a {} (adjective) scoop of ice cream. It filled my stomach. Afterwards I had to {} (verb) {} (adverb) to catch our bus. When I got home I {} (verb, past tense) my mom for a {} (adjective) day at the zoo."
+
+LIST_OF_USER_INPUT = []
+
+def inputFunction(type)
+    
+    ask user: "Please enter a " + type
+    
+    store answer in LIST_OF_USER_INPUT
+    use .append(x)
+    
+inputFunction(adjective)
+inputFunction(noun)
+inputFunction(past tense verb)
+inputFunction(adverb)
+inputFunction(adjective)
+inputFunction(noun)
+inputFunction(noun)
+inputFunction(adjective)
+inputFunction(verb)
+inputFunction(adverb)
+inputFunction(past tense verb)
+inputFunction(adjective)
+
+LIST_OF_USER_INPUT[11]
+
+filledMadLib = MAD_LIB.format(LIST_OF_USER_INPUT[0],LIST_OF_USER_INPUT[1], LIST_OF_USER_INPUT[2], LIST_OF_USER_INPUT[3], LIST_OF_USER_INPUT[4], LIST_OF_USER_INPUT[5], LIST_OF_USER_INPUT[6], LIST_OF_USER_INPUT[7], LIST_OF_USER_INPUT[8], LIST_OF_USER_INPUT[9], LIST_OF_USER_INPUT[10], LIST_OF_USER_INPUT[11])
+
+print(filledMadLib)
